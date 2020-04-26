@@ -1,8 +1,8 @@
-#STOP! Don't clone or download this repo yet. But DO follow the Prerequisite and Environment Setup instructions.
+# STOP! Don't clone or download this repo yet. But DO follow the Prerequisite and Environment Setup instructions.
 
 You'll want to wait until May 1 to download everything. Until then, make sure you have all the services you need to follow along.
 
-##Prerequisites
+## Prerequisites
 In this step, you will provision and install the services and software you need for the hands-on lab.
 
 1. Sign up for a free [IBM Cloud account](https://cloud.ibm.com/).
@@ -12,7 +12,7 @@ In this step, you will provision and install the services and software you need 
 5. Provision a free instance of [Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage).
 6. (Optional): Download and install the [IBM Cloud command line tool](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/).
 
-##0. Environment setup
+## 0. Environment setup
 In this step, you will create the service credentials and projjects you need for the hands-on lab.
 
 Start by creating credentials for Watson Machine Learning. Navigate to your [IBM Cloud Resources page](https://cloud.ibm.com/resources). From the **Resource list**, expand the **Services** section and click on the instance of Watson Machine Learning you created in the previous section.
