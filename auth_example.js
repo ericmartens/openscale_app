@@ -12,5 +12,10 @@ module.exports = {
         "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::",
         "instance_id": "instance_id",
         "url": "https://us-south.ml.cloud.ibm.com",
+    },
+    openscale: {
+        guid: "xxxxxxxxxxxxxxxxxxxxxx",
+        subscription: "xxxxxxx-xxxxxxx-xxxxxxx",
+        scoring_url: "https://us-south.ml.cloud.ibm.com/v3/wml_instances/xxxxx/deployments/xxxxx/online"
     }
 };

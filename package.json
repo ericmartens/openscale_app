@@ -4,7 +4,7 @@
   "description": "Create a model, monitor with OpenScale, and connect via Node app",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "keywords": [
     "openscale",
@@ -14,5 +14,10 @@
     "learning"
   ],
   "author": "emartens@us.ibm.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
 }

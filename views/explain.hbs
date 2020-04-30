@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explain</title>
+</head>
+<body>
+<div class="container">
+    <h1>Explain My Rating</h1>
+    <p>Using the <a href="https://homes.cs.washington.edu/~marcotcr/blog/lime/" target="_blank">LIME
+        algorithm</a>, Watson OpenScale can provide detailed explanations for any predictions made by
+        the model. LIME works not just for decision trees and linear regressions, but also for complex
+        neural networks.
+    </p>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Is this mortgage application risky?</h3>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                <tr>
+                    <th>{{explanation.predictions.0.value}} - {{explanation.predictions.0.probability}}%</th>
+                    <th>{{explanation.predictions.1.value}} - {{explanation.predictions.1.probability}}%</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            {{#each explanation.predictions.0.explanation_features}}
+                                <li>{{this.feature_name}} - {{this.weight}}%</li>
+                            {{/each}}
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            {{#each explanation.predictions.1.explanation_features}}
+                                <li>{{this.feature_name}} - {{this.weight}}</li>
+                            {{/each}}
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="application" class="btn btn-primary">File another application</a>
+        </div>
+        <div class="col-md-4">
+            <h5>Feature Values</h5>
+            <table class="table table-bordered table-hover table-sm">
+                <thead class="thead-light">
+                <tr>
+                    <th>Feature</th>
+                    <th>Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each explanation.input_features}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td>{{this.value}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
