@@ -203,6 +203,8 @@ Note that the Lite version of OpenScale does limit the number of explanations yo
 
 ## 4. Next steps
 
+Tune in May 15 for an AutoAI presentation from Jacques Roy! And subscribe to his excellent YouTube channel, [Byte Size Data Science](https://www.youtube.com/channel/UCC00OTwEMHA2jq50m4oJ95g).
+
 The model and application can be improved in several ways:
 
 * More tuning could be done to the model to improve its accuracy.
