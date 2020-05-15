@@ -1,6 +1,6 @@
 # Build, monitor and infuse AI with IBM Cloud, Watson Machine Learning, and Watson OpenScale
 
-Welcome! The instructions below have been provided as part of an IBM Developer webcast series. By following along, you will provision IBM Cloud services, train and deploy a machine learning model, monitor that model, and finally deploy an IBM Cloud app that incorporates the model and the monitoring information.
+Welcome! The instructions below have been provided as part of an IBM Developer webcast series. By following along, you will provision IBM Cloud services, train and deploy a machine learning model, monitor that model, and finally deploy an IBM Cloud app that incorporates the model and the monitoring information. The webcast replay can be found [here](https://www.crowdcast.io/e/3part-watson-ai-technology-series/2).
 
 ## Prerequisites
 In this step, you will provision and install the services and software you need for the hands-on lab.
